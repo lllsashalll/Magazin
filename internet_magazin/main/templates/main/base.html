@@ -1,10 +1,13 @@
-<html>
-	<head>
-		<title>	{% blok title %}</title>
-	</head>
-	<body>
-		{% blok body %}
-	</body>
-
-
-</html>	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div align="center">
+	        {% block content %}{% endblock %}
+	</div>
+</body>
+</html>
